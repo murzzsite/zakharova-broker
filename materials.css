@@ -310,3 +310,16 @@
   .kpi { grid-template-columns: repeat(2, 1fr); }
   .kpi b { font-size: 26px; }
 }
+
+/* Таблицы на телефоне превращаются в карточки */
+@media (max-width: 640px) {
+  .doc-bar__back span { display: inline; }
+  .tbl-wrap { overflow: visible; margin: 0; }
+  .tbl, .tbl tbody, .tbl tr, .tbl td { display: block; width: 100%; }
+  .tbl tr:first-child:has(th) { display: none; }
+  .tbl tr { border: 1px solid var(--clr-border); border-radius: 12px; padding: 6px 12px; margin-bottom: 10px; background: var(--clr-surface); }
+  .tbl td { border: 0; padding: 6px 0; }
+  .tbl td::before { content: attr(data-label); display: block; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--clr-accent-dark); margin-bottom: 1px; }
+  .tbl td[data-label=""]::before, .tbl td:not([data-label])::before { display: none; }
+  .tbl td:first-child { font-weight: 700; }
+}

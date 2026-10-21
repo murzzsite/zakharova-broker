@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="../materials.css">
+<link rel="stylesheet" href="../materials.css?v=3">
 <style>
   .kpi { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 8px; }
   .kpi div { background: var(--clr-surface); border: 1px solid var(--clr-border); border-radius: var(--radius); padding: 18px 14px; text-align: center; }
@@ -95,5 +95,6 @@
 
 </div>
 
+<script>document.querySelectorAll(".tbl").forEach(function(t){var h=[].map.call(t.querySelectorAll("th"),function(x){return x.textContent});if(!h.length)return;t.querySelectorAll("tr").forEach(function(r){[].forEach.call(r.children,function(c,i){if(c.tagName==="TD")c.setAttribute("data-label",h[i]||"")})})});</script>
 </body>
 </html>
