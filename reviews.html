@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Отзывы: плакат и ответы — Анна Захарова</title>
+<meta name="description" content="QR-плакат «Оставьте отзыв» для печати и десять шаблонов ответов на хорошие и плохие отзывы.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="materials.css">
+<style>
+  .poster { max-width: 520px; margin: 0 auto; background: #fff; border: 2px solid var(--clr-accent-dark); border-radius: 24px; padding: 40px 32px; text-align: center; }
+  .poster h2 { font-size: 30px; }
+  .poster__qr { display: flex; justify-content: center; margin: 24px 0; }
+  .poster__qr canvas, .poster__qr img { border: 8px solid #fff; }
+  .poster__name { color: var(--clr-ink-soft); font-size: 15px; }
+  .poster-tools { max-width: 520px; margin: 0 auto 24px; }
+  .poster-tools input { width: 100%; padding: 12px 14px; border: 1px solid var(--clr-border); border-radius: 10px; font: inherit; }
+  @media print { .poster-tools, .doc-section--replies { display: none !important; } .poster { border: 3px solid #000; margin-top: 30px; } }
+</style>
+</head>
+<body>
+
+<div class="doc-bar">
+  <div class="doc-bar__inner">
+    <a href="report/" class="doc-bar__back">← <span>Страница проекта</span></a>
+    <div class="doc-bar__actions">
+      <button class="btn btn--primary" onclick="window.print()">Распечатать плакат</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <section class="doc-hero">
+    <p class="eyebrow">Отзывы</p>
+    <h1>QR-плакат и готовые ответы на отзывы</h1>
+    <p class="doc-hero__lead">Отзывы на картах влияют на выбор сильнее, чем сайт. Плакат упрощает просьбу «оставьте отзыв», а шаблоны экономят время на ответах. Просить отзывы можно у реальных клиентов, покупать или писать их самим нельзя: площадки блокируют такие карточки.</p>
+  </section>
+
+  <section class="doc-section">
+    <h2>1. QR-плакат для печати</h2>
+    <p class="doc-section__lead">Вставьте ссылку на отзыв в вашей карточке (Яндекс Карты, 2ГИС или Google): откройте карточку, нажмите «Оставить отзыв» и скопируйте адрес. Пока карточки нет, QR показывает ссылку на ваш Telegram-канал — это только пример, как плакат выглядит.</p>
+    <div class="poster-tools">
+      <input id="reviewUrl" type="url" placeholder="Вставьте ссылку на отзыв в карточке" value="https://t.me/komfin_AZ">
+    </div>
+    <div class="poster">
+      <p class="eyebrow">Анна Захарова · кредитный брокер</p>
+      <h2>Помогла? Оставьте отзыв</h2>
+      <p>Наведите камеру телефона на код. Это займёт минуту и поможет другим сделать выбор.</p>
+      <div class="poster__qr" id="qr"></div>
+      <p class="poster__name">Спасибо, что доверяете!</p>
+    </div>
+  </section>
+
+  <section class="doc-section doc-section--replies">
+    <h2>2. Десять шаблонов ответов на отзывы</h2>
+    <p class="doc-section__lead">Подставляйте имя и деталь из отзыва, чтобы ответ не выглядел шаблонным. Не раскрывайте в ответах подробности сделки и кредитной истории: это конфиденциальные данные.</p>
+
+    <h3>Положительные</h3>
+    <div class="grid-2">
+      <div class="card"><p>1. «Спасибо, [имя]! Рада, что получилось решить вопрос с [финансированием]. Если понадобится помощь снова, пишите.»</p></div>
+      <div class="card"><p>2. «[Имя], благодарю за тёплые слова. Для меня главное, чтобы клиент понимал каждый шаг. Рада, что это удалось.»</p></div>
+      <div class="card"><p>3. «Спасибо за отзыв! Приятно, что [деталь из отзыва] оказалась для вас важной. Успехов вашему делу!»</p></div>
+      <div class="card"><p>4. «[Имя], спасибо, что рекомендуете. Буду рада помочь вашим знакомым, консультация для них без обязательств.»</p></div>
+      <div class="card"><p>5. «Благодарю! Сделка была непростой, и приятно, что мы довели её до результата. Хорошего вам дня.»</p></div>
+    </div>
+
+    <h3 style="margin-top:32px">Негативные и спорные</h3>
+    <div class="grid-2">
+      <div class="card"><p>6. «[Имя], сожалею, что осталось неприятное впечатление. Расскажите, пожалуйста, что именно пошло не так, напишите в @kredit_broker_AZ. Хочу разобраться и исправить, если ошибка наша.»</p></div>
+      <div class="card"><p>7. «Спасибо за честный отзыв. Я не обещаю одобрение заранее, потому что решение принимает банк, но обязана была лучше объяснить риски. Учту это.»</p></div>
+      <div class="card"><p>8. «[Имя], понимаю ваше недовольство сроками. Напишите мне в Telegram, посмотрим, на каком этапе задержка, и что можно ускорить.»</p></div>
+      <div class="card"><p>9. «Отзыв прочитала. Подробности по сделке обсуждать публично не могу, но готова разобрать ситуацию лично, напишите на @kredit_broker_AZ.»</p></div>
+      <div class="card"><p>10. «Спасибо, что написали. К сожалению, мы не нашли среди клиентов обращение с такими данными. Пожалуйста, уточните в личных сообщениях, чтобы я могла разобраться.»</p></div>
+    </div>
+  </section>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+(function(){
+  var box = document.getElementById('qr');
+  var input = document.getElementById('reviewUrl');
+  var qr = null;
+  function render(){
+    var url = (input.value || '').trim();
+    box.innerHTML = '';
+    if(!url) return;
+    qr = new QRCode(box, {text: url, width: 220, height: 220, correctLevel: QRCode.CorrectLevel.M});
+  }
+  input.addEventListener('input', render);
+  render();
+})();
+</script>
+</body>
+</html>

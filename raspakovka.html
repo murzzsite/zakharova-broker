@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Распаковка — Анна Захарова</title>
+<meta name="description" content="Рабочая тетрадь: финансовая модель, портреты клиентов, позиционирование, отстройка от конкурентов, цепочка прогрева, дорожная карта и план переговоров.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="materials.css">
+</head>
+<body>
+
+<div class="doc-bar">
+  <div class="doc-bar__inner">
+    <a href="report/" class="doc-bar__back">← <span>Страница проекта</span></a>
+    <div class="doc-bar__actions">
+      <a href="recommendations.html" class="btn btn--ghost">Рекомендации</a>
+      <button class="btn btn--primary" onclick="window.print()">Сохранить в PDF</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <section class="doc-hero">
+    <p class="eyebrow">Распаковка · черновик по вашему брифу</p>
+    <h1>Рабочая тетрадь: кто ваш клиент, чем вы отличаетесь и как продаёте</h1>
+    <p class="doc-hero__lead">Всё заполнено по ответам, которые вы уже дали в брифе и на сайте: ничего перезаполнять не нужно. Прочитайте и исправьте то, что не совпадает с практикой. Места, где мы сделали допущение, помечены <span class="draft">допущение</span>.</p>
+    <nav class="toc">
+      <a href="#model">1. Финансовая модель</a>
+      <a href="#audience">2. Портреты клиентов</a>
+      <a href="#position">3. Позиционирование</a>
+      <a href="#vs">4. Отстройка</a>
+      <a href="#warm">5. Цепочка прогрева</a>
+      <a href="#road">6. Дорожная карта</a>
+      <a href="#talk">7. План переговоров</a>
+    </nav>
+  </section>
+
+  <section class="doc-section" id="model">
+    <h2>1. Финансовая модель</h2>
+    <p class="doc-section__lead">Ваша цель из брифа: 500–700 тыс. ₽ выручки в месяц при примерно 5 новых клиентах. Это средний чек 100–140 тыс. ₽ на клиента, то есть цель достижима только за счёт крупных сделок, а не консультаций.</p>
+
+    <div class="card">
+      <div class="tbl-wrap"><table class="tbl">
+        <tr><th>Услуга</th><th>Цена</th><th>Что нужно для 600 тыс. ₽/мес</th></tr>
+        <tr><td>Поиск финансирования, например 5 млн ₽</td><td>от 3% = 150 000 ₽</td><td>4 сделки по 5 млн ₽</td></tr>
+        <tr><td>Исправление кредитной истории</td><td>от 20 000 ₽</td><td>как дополнение к потоку</td></tr>
+        <tr><td>Консультация по КИ</td><td>3 000 ₽</td><td>вход в воронку, не источник выручки</td></tr>
+      </table></div>
+      <p class="card__note">Вывод: основная выручка идёт от поиска финансирования для бизнеса. Консультацию и исправление истории используйте как вход в воронку.</p>
+    </div>
+
+    <div class="card">
+      <p class="card__title">Сколько заявок нужно <span class="draft">допущение</span></p>
+      <div class="tbl-wrap"><table class="tbl">
+        <tr><th>Этап</th><th>Конверсия</th><th>Нужно в месяц</th></tr>
+        <tr><td>Заявок с сайта и из Telegram</td><td>—</td><td>~25</td></tr>
+        <tr><td>Дошли до разговора</td><td>~60%</td><td>~15</td></tr>
+        <tr><td>Стали клиентами</td><td>~35% от разговоров</td><td>~5</td></tr>
+      </table></div>
+      <p class="card__note">Конверсии усреднены, замените их своими цифрами, когда накопится статистика.</p>
+    </div>
+  </section>
+
+  <section class="doc-section" id="audience">
+    <h2>2. Портреты клиентов</h2>
+    <div class="grid-3">
+      <div class="card">
+        <span class="tag">Основной</span>
+        <p class="card__title">Владелец бизнеса с залогом</p>
+        <p><b>Ситуация:</b> нужны деньги на развитие, пополнение оборота или контракт, есть коммерческая или жилая недвижимость.</p>
+        <p><b>Боль:</b> банки отказывают или тянут, нет времени ходить по ним самому.</p>
+        <p><b>Что хочет:</b> одобрение в сроки и без лишних вопросов.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Входной</span>
+        <p class="card__title">Человек после отказа</p>
+        <p><b>Ситуация:</b> банк отказал в кредите или ипотеке, причина неясна.</p>
+        <p><b>Боль:</b> не понимает, что не так, боится ухудшить историю.</p>
+        <p><b>Что хочет:</b> понятный диагноз и план.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Сделки</span>
+        <p class="card__title">Покупатель недвижимости</p>
+        <p><b>Ситуация:</b> выбирает жилую или коммерческую недвижимость.</p>
+        <p><b>Боль:</b> боится юридических рисков и переплаты.</p>
+        <p><b>Что хочет:</b> безопасную сделку и подходящую ипотеку.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="doc-section" id="position">
+    <h2>3. Ценностное позиционирование</h2>
+    <div class="card">
+      <p class="card__title">Одной фразой</p>
+      <p>«Подберу банк и программу, где одобрение реально, и провожу сделку до результата: вам не нужно обходить банки самостоятельно.»</p>
+    </div>
+    <div class="card">
+      <p class="card__title">Уникальный метод в трёх шагах <span class="draft">допущение</span></p>
+      <ul class="ul">
+        <li><b>Диагноз.</b> Разбор кредитной истории и залога до подачи заявок, чтобы не получать лишние отказы.</li>
+        <li><b>Подбор.</b> Выбор банков и структуры сделки под объект и задачу.</li>
+        <li><b>Сопровождение.</b> Переговоры с банком и документы вместо клиента до выдачи денег.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <p class="card__title">Кейс «До / После»</p>
+      <div class="grid-2">
+        <div class="say say--client"><span class="say__who">До</span>Клиенту из Алтайского края нужно финансирование на бизнес, залог — агрокомплекс, нестандартный объект.</div>
+        <div class="say"><span class="say__who">После</span>10 млн ₽ на 5 лет: банк принял агрокомплекс в залог, сделка структурирована под задачи бизнеса.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="doc-section" id="vs">
+    <h2>4. Отстройка от конкурентов</h2>
+    <p class="doc-section__lead">Обобщённая таблица по типам альтернатив. Подставьте названия 2–3 конкретных конкурентов из вашего города.</p>
+    <div class="card">
+      <div class="tbl-wrap"><table class="tbl">
+        <tr><th></th><th>Банк напрямую</th><th>«Брокер с предоплатой»</th><th>Вы</th></tr>
+        <tr><td>Сколько вариантов</td><td>Только свои продукты</td><td>Разное</td><td>Подбор из нескольких банков</td></tr>
+        <tr><td>Когда платите</td><td>Бесплатно</td><td>До результата</td><td>Цена фиксируется заранее</td></tr>
+        <tr><td>Если отказ</td><td>Новая заявка с ухудшением истории</td><td>Часто деньги не возвращают</td><td>Разбор причины и честная оценка шансов</td></tr>
+        <tr><td>Что обещают</td><td>—</td><td>«Гарантия одобрения»</td><td>Без гарантий, с понятным планом</td></tr>
+      </table></div>
+      <p class="card__note">Формулировки для сайта и карт: «Скажу честно, если шансов нет», «Цену называю до начала работы», «Не обещаю невозможного».</p>
+    </div>
+  </section>
+
+  <section class="doc-section" id="warm">
+    <h2>5. Цепочка прогрева: 10 касаний</h2>
+    <div class="card">
+      <div class="tbl-wrap"><table class="tbl">
+        <tr><th>№</th><th>Когда</th><th>Что отправить</th></tr>
+        <tr><td>1</td><td>В день заявки</td><td>Приветствие и три вопроса: сумма, залог, отказы</td></tr>
+        <tr><td>2</td><td>День 1</td><td>Кейс на 10 млн ₽ с агрокомплексом</td></tr>
+        <tr><td>3</td><td>День 2</td><td>Короткий пост: почему банки отказывают</td></tr>
+        <tr><td>4</td><td>День 3</td><td>Предложение консультации за 3 000 ₽</td></tr>
+        <tr><td>5</td><td>День 5</td><td>Чек-лист «Какие документы подготовить»</td></tr>
+        <tr><td>6</td><td>День 7</td><td>Ответ на возражение «в банке бесплатно»</td></tr>
+        <tr><td>7</td><td>День 10</td><td>Разбор типичной ошибки в заявке</td></tr>
+        <tr><td>8</td><td>День 14</td><td>Приглашение в канал @komfin_AZ</td></tr>
+        <tr><td>9</td><td>День 21</td><td>Вопрос: актуальна ли задача?</td></tr>
+        <tr><td>10</td><td>День 30</td><td>Последнее напоминание и закрытие заявки</td></tr>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="doc-section" id="road">
+    <h2>6. Дорожная карта: 5 задач</h2>
+    <ol class="ul checklist" style="list-style:none;margin-left:0">
+      <li><b>Кейсы.</b> Оформить 3 кейса по шаблону «До / После» (один уже есть). Срок: 1 неделя.</li>
+      <li><b>Методология.</b> Закрепить 3 шага метода и использовать их в канале и на сайте. Срок: 1 неделя.</li>
+      <li><b>Лид-магнит.</b> Чек-лист «Какие документы подготовить для кредита под залог». Срок: 2 недели.</li>
+      <li><b>План переговоров.</b> Прогнать разговор по плану ниже на 3 заявках. Срок: 2 недели.</li>
+      <li><b>Скрипты.</b> Использовать <a href="scripts.html">скрипты продаж</a> и собрать свои ответы на новые возражения. Срок: постоянно.</li>
+    </ol>
+  </section>
+
+  <section class="doc-section" id="talk">
+    <h2>7. План переговоров на 20–40 минут</h2>
+    <div class="grid-2">
+      <div class="card"><p class="card__title">1. Контакт</p><p>Рамка разговора, согласие на вопросы.</p></div>
+      <div class="card"><p class="card__title">2. Боли</p><p>Сумма, срок, отказы, что уже пробовали.</p></div>
+      <div class="card"><p class="card__title">3. Метод</p><p>Диагноз → подбор → сопровождение.</p></div>
+      <div class="card"><p class="card__title">4. Кейсы</p><p>10 млн ₽ под залог агрокомплекса.</p></div>
+      <div class="card"><p class="card__title">5. Возражения</p><p>Подробно в <a href="scripts.html#objections">скриптах продаж</a>.</p></div>
+      <div class="card"><p class="card__title">6. Цена и шаг</p><p>Консультация 3 000 ₽ или поиск от 3%, срок следующего шага.</p></div>
+    </div>
+    <div class="tip"><strong>7. Закрытие:</strong> зафиксируйте договорённость сообщением в Telegram: что вы делаете, что делает клиент и к какому сроку.</div>
+  </section>
+
+</div>
+
+</body>
+</html>
